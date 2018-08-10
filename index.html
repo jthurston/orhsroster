@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ORHS Team Roster</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>ORHS Team Roster</h2>
+  <p>Type number or name to filter:</p>  
+  <input class="form-control" id="myInput" type="text" placeholder="Search..">
+  <br>
+  <ul class="list-group" id="myList">
+    <li class="list-group-item">1 - Jeremy Mitchell</li>
+    <li class="list-group-item">2 - Jonathan Stewart</li>
+    <li class="list-group-item">3 - Jacquez Johnson</li>
+    <li class="list-group-item">4 - Keyon Porter</li>
+    <li class="list-group-item">6 - Tre Jackson</li>
+    <li class="list-group-item">7 - Caelan Thompsonth</li>
+    <li class="list-group-item">8 - Jordan Graham</li>
+    <li class="list-group-item">9 - Isaiah Goskowicz</li>
+    <li class="list-group-item">10 - Carson Payne</li>
+    <li class="list-group-item">11 - Cameron Malone</li>
+    <li class="list-group-item">​12 - Kai'Reese Pendergrass</li>
+    <li class="list-group-item">​13 - Herbert Booker</li>
+    <li class="list-group-item">14 - Mitchell Gibbons</li>
+    <li class="list-group-item">15 - Shemar Smith</li>
+    <li class="list-group-item">16 - Kjuan Stacy-Wright</li>
+    <li class="list-group-item">17 - RJ Jennings</li>
+    <li class="list-group-item">18 - Cadon McCullah</li>
+    <li class="list-group-item">19 - Landen Ortiz</li>
+    <li class="list-group-item">20 - Isaiah Johnson</li>
+    <li class="list-group-item">21 - Tyrell Romano</li>
+    <li class="list-group-item">22 - Preston Turner</li>
+    <li class="list-group-item">​23 - Cole Adams</li>
+    <li class="list-group-item">​24 - Jaylen Heyward</li>
+    <li class="list-group-item">26 - Jack Replogle</li>
+    <li class="list-group-item">27 - Cannon Shelton</li>
+    <li class="list-group-item">28 - Marlo Anderson</li>
+    <li class="list-group-item">30 - Michael Molina</li>
+    <li class="list-group-item">31 - Brady Hutson</li>
+    <li class="list-group-item">32 - Ky Hirsch</li>
+    <li class="list-group-item">33 - Adam Wallace</li>
+    <li class="list-group-item">34 - Brennyn Benjamin</li>
+    <li class="list-group-item">35 - Andrew Bivens</li>
+    <li class="list-group-item">​36 - Trey Rowe</li>
+    <li class="list-group-item">40 - Jaxon Adams</li>
+    <li class="list-group-item">41 - Allan Ayala</li>
+    <li class="list-group-item">42 - Ruben Para</li>
+    <li class="list-group-item">​44 - Jacob Adams</li>
+    <li class="list-group-item">45 - Sean Phillips</li>
+    <li class="list-group-item">46 - Wolfe Russell</li>
+    <li class="list-group-item">50 - Will Ward</li>
+    <li class="list-group-item">51 - Skylar Crutchfield</li>
+    <li class="list-group-item">52 - Erik Herrera</li>
+    <li class="list-group-item">54 - Colt Carson</li>
+    <li class="list-group-item">55 - Jacob Kesterson</li>
+    <li class="list-group-item">​56 - Matthew Calhoun</li>
+    <li class="list-group-item">57 - Takudswa Mabvuta</li>
+    <li class="list-group-item">58 - Isaiah Boone</li>
+    <li class="list-group-item">59 - TJ Johnson</li>
+    <li class="list-group-item">​60 - Darius Stewart</li>
+    <li class="list-group-item">61 - Cason Staggs</li>
+    <li class="list-group-item">62 - Vinny West</li>
+    <li class="list-group-item">65- Gabe Oldham</li>
+    <li class="list-group-item">66 - Robert Hill</li>
+    <li class="list-group-item">67 - Samuel Hensley</li>
+    <li class="list-group-item">70 - Issair Franquez</li>
+    <li class="list-group-item">​71 - Alex Merritt</li>
+    <li class="list-group-item">72 - Tyler Galloway</li>
+    <li class="list-group-item">73 - Tyler Tate</li>
+    <li class="list-group-item">74 - R'Vayus Truss</li>
+    <li class="list-group-item">75 - Anthony Coronel</li>
+    <li class="list-group-item">80 - Camden Mlekodaj</li>
+    <li class="list-group-item">82 - Ralph Sanders</li>
+    <li class="list-group-item">83 - Loegan Foisy</li>
+    <li class="list-group-item">86 - Isaiah Wilder</li>
+    <li class="list-group-item">87 - Jackson Linn</li>
+    <li class="list-group-item">88 - Matthew Swigert</li>
+  </ul> 
+</div>
+
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myList li").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+
+</body>
+</html>
